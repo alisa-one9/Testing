@@ -4,58 +4,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.MainActivity"
+    android:padding="30dp">
 
     <EditText
         android:id="@+id/input_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8sp"
-        android:textColor="@color/black" />
+        android:background="@drawable/edittext_style"
+        android:textColor="@color/black"
+        android:hint="введите цифру:"
+        android:textColorHint="@color/teal_200"/>
 
     <EditText
         android:id="@+id/input_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8sp"
-        android:textColor="@color/black" />
+        android:background="@drawable/edittext_style"
+        android:textColor="@color/black"
+        android:hint="введите цифру:"
+        android:textColorHint="@color/teal_200"/>
 
     <Button
         android:id="@+id/addBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/add" />
+        android:layout_margin="15dp"
+        android:background="@drawable/btn_style"
+        android:text="@string/add"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/subtractBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/subtract" />
+        android:layout_margin="15dp"
+        android:text="@string/subtract"
+       android:background="@drawable/btn_style"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/divBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/divide" />
+        android:layout_margin="15dp"
+        android:text="@string/divide"
+        android:background="@drawable/btn_style"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/multiplyBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/multiply" />
+        android:layout_margin="15dp"
+        android:text="@string/multiply"
+        android:background="@drawable/btn_style"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/result_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:background="@drawable/edittext_style"
         android:textAlignment="center"
+        android:text="здесь будет результат:"
         android:hint="@string/result"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
